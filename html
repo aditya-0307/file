@@ -1,0 +1,699 @@
+//bold italic underline html
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formatting Example</title>
+    <style>
+        .blink {
+            animation: blinker 1s linear infinite;
+        }
+
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <p><b>Bold</b></p>
+    <p><i>Italic</i></p>
+    <p><u>Underline</u></p>
+    <p style="color: red;">Colored text</p>
+    <p style="font-family: Arial;">Arial font</p>
+    <p style="font-size: 24px;">Font size 24px</p>
+    <p style="background-color: yellow;">Background color</p>
+    <p>Paragraph 1</p>
+    <br> <!-- Line break -->
+    <p>Paragraph 2</p>
+    <hr> <!-- Horizontal line -->
+    <p class="blink">Blinking text</p>
+    <marquee behavior="scroll" direction="left">Marquee text</marquee>
+</body>
+</html>
+
+//ordered unordered list inserting image
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lists, Images, and Links Example</title>
+</head>
+<body>
+    <h1>Lists, Images, and Links</h1>
+
+    <h2>Ordered List</h2>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <h2>Unordered List</h2>
+    <ul>
+        <li>Item A</li>
+        <li>Item B</li>
+        <li>Item C</li>
+    </ul>
+
+    <h2>Image Insertion</h2>
+    <img src="path/to/image.jpg" alt="Image description">
+
+    <h2>Internal Linking</h2>
+    <p>
+        <a href="#section1">Jump to Section 1</a>
+        <br>
+        <a href="#section2">Jump to Section 2</a>
+    </p>
+
+    <h2 id="section1">Section 1</h2>
+    <p>This is Section 1 content.</p>
+
+    <h2 id="section2">Section 2</h2>
+    <p>This is Section 2 content.</p>
+
+    <h2>External Linking</h2>
+    <p>
+        <a href="https://www.example.com">Visit Example Website</a>
+    </p>
+</body>
+</html>
+
+
+// timetable
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Current Semester Timetable</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Current Semester Timetable</h1>
+
+    <table>
+        <tr>
+            <th>Time</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+        </tr>
+        <tr>
+            <td>9:00 AM - 10:30 AM</td>
+            <td>Mathematics</td>
+            <td>Physics</td>
+            <td>Chemistry</td>
+            <td>English</td>
+            <td>Computer Science</td>
+        </tr>
+        <tr>
+            <td>10:45 AM - 12:15 PM</td>
+            <td>History</td>
+            <td>Geography</td>
+            <td>Mathematics</td>
+            <td>Physics</td>
+            <td>Chemistry</td>
+        </tr>
+        <tr>
+            <td>1:00 PM - 2:30 PM</td>
+            <td>English</td>
+            <td>Computer Science</td>
+            <td>History</td>
+            <td>Geography</td>
+            <td>Mathematics</td>
+        </tr>
+        <!-- Add more rows for additional time slots -->
+    </table>
+</body>
+</html>
+
+//horizontal vertical frame hyperlink
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Website</title>
+    <style>
+        /* Styles for header */
+        header {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Styles for main content */
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        /* Styles for left column */
+        .left-column {
+            flex-basis: 20%;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+
+        /* Styles for right column */
+        .right-column {
+            flex-basis: 75%;
+            padding: 20px;
+        }
+
+        /* Styles for links in left column */
+        .left-column a {
+            display: block;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Styles for content in right column */
+        .right-column h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>College Name</h1>
+        <img src="path/to/logo.png" alt="College Logo">
+    </header>
+
+    <main>
+        <div class="left-column">
+            <a href="faculty.html">Faculty</a>
+            <a href="courses.html">Courses</a>
+            <a href="activities.html">Student Activities</a>
+            <!-- Add more links as needed -->
+        </div>
+
+        <div class="right-column">
+            <h2>Welcome to Our College!</h2>
+            <p>This is the main content area where the corresponding webpage content will be displayed based on the link clicked in the left column.</p>
+        </div>
+    </main>
+</body>
+</html>
+
+
+// student registration form
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        /* Styles for the form container */
+        .form-container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+
+        /* Styles for form controls */
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #45a049;
+        }
+
+        /* Interactive content presentation */
+        .hidden-content {
+            display: none;
+        }
+
+        input[type="checkbox"]:checked ~ .hidden-content {
+            display: block;
+        }
+
+        .dropdown-content {
+            display: none;
+        }
+
+        select:hover + .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Student Registration Form</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+
+            <label for="interests">Interests:</label>
+            <input type="checkbox" id="sports" name="interests" value="sports">
+            <label for="sports">Sports</label>
+            <input type="checkbox" id="music" name="interests" value="music">
+            <label for="music">Music</label>
+            <input type="checkbox" id="art" name="interests" value="art">
+            <label for="art">Art</label>
+
+            <label for="course">Course:</label>
+            <select id="course" name="course">
+                <option value="math">Math</option>
+                <option value="science">Science</option>
+                <option value="history">History</option>
+            </select>
+            <div class="dropdown-content">
+                <p>Additional course details or options can be displayed here.</p>
+            </div>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+
+        <div class="hidden-content">
+            <h3>Additional Information:</h3>
+            <p>This content is displayed when a checkbox is checked.</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+// webpage for department faculty course css
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Computer Science Department</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        /* Navigation menu styles */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul ul {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        nav ul ul li {
+            display: block;
+            width: 200px;
+        }
+
+        nav ul ul li a {
+            padding: 10px;
+            color: #fff;
+        }
+
+        /* Main content styles */
+        main {
+            padding: 20px;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Computer Science Department</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li>
+                        <a href="#">Faculty</a>
+                        <ul>
+                            <li><a href="#">Professors</a></li>
+                            <li><a href="#">Lecturers</a></li>
+                            <li><a href="#">Teaching Assistants</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Courses</a>
+                        <ul>
+                            <li><a href="#">Undergraduate</a></li>
+                            <li><a href="#">Graduate</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Activities</a></li>
+                    <li><a href="#">Research</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Welcome to the Computer Science Department</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet urna nec felis tincidunt faucibus. Integer fringilla lectus vel augue sagittis interdum. Sed facilisis lectus et ligula elementum, eget gravida urna ultrices. Donec dignissim tellus non massa auctor, a viverra nibh pellentesque. Donec auctor malesuada massa, eget hendrerit odio luctus vel. Fusce vestibulum nunc et nunc dignissim fermentum.</p>
+            <p>Praesent ultricies, dui eu fermentum pellentesque, ex dolor fermentum mauris, ut tempus felis enim vel leo. Fusce id lectus eu nunc scelerisque feugiat. Proin et felis eget nisl dictum scelerisque. Etiam consequat risus vel leo lobortis lacinia. Ut mattis tellus in iaculis fermentum. Nullam mollis eleifend ligula sed ullamcorper. Morbi interdum enim at efficitur ullamcorper.</p>
+        </div>
+    </main>
+</body>
+</html>
+
+
+// multiplication table
+
+function printMultiplicationTable() {
+  var number = parseInt(document.getElementById("numberInput").value);
+  var table = "";
+
+  for (var i = 1; i <= 10; i++) {
+    var result = number * i;
+    table += number + " x " + i + " = " + result + "<br>";
+  }
+
+  document.getElementById("result").innerHTML = table;
+}
+
+
+//html
+
+<input type="number" id="numberInput" />
+<button onclick="printMultiplicationTable()">Print Multiplication Table</button>
+<div id="result"></div>
+
+
+//largest of three
+
+function findLargestNumber() {
+  var num1 = parseInt(document.getElementById("num1").value);
+  var num2 = parseInt(document.getElementById("num2").value);
+  var num3 = parseInt(document.getElementById("num3").value);
+
+  var largest = Math.max(num1, num2, num3);
+
+  document.getElementById("result").innerHTML = "Largest Number: " + largest;
+}
+
+
+//html
+
+<input type="number" id="num1" />
+<input type="number" id="num2" />
+<input type="number" id="num3" />
+<button onclick="findLargestNumber()">Find Largest Number</button>
+<div id="result"></div>
+
+//factorial of a no.
+
+function calculateFactorial() {
+  var number = parseInt(document.getElementById("numberInput").value);
+  var factorial = 1;
+
+  for (var i = 2; i <= number; i++) {
+    factorial *= i;
+  }
+
+  document.getElementById("result").innerHTML = "Factorial: " + factorial;
+}
+
+
+//html
+
+<input type="number" id="numberInput" />
+<button onclick="calculateFactorial()">Calculate Factorial</button>
+<div id="result"></div>
+
+
+// sum n average of positive no.
+
+function calculateSumAndAverage() {
+  var numbers = [];
+  var input = prompt("Enter a positive number (0 to stop):");
+  while (parseInt(input) !== 0) {
+    numbers.push(parseInt(input));
+    input = prompt("Enter a positive number (0 to stop):");
+  }
+
+  var sum = 0;
+  for (var i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+  }
+
+  var average = sum / numbers.length;
+
+  document.getElementById("result").innerHTML =
+    "Sum: " + sum + "<br>Average: " + average;
+}
+
+
+//html
+
+<button onclick="calculateSumAndAverage()">Enter Numbers</button>
+<div id="result"></div>
+
+
+//html student registration form css javascript
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+    <style>
+        /* Form container styles */
+        .form-container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+
+        /* Input field styles */
+        input[type="text"],
+        input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        /* Button styles */
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #45a049;
+        }
+
+        /* Error message styles */
+        .error {
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Student Registration Form</h2>
+        <form id="registrationForm" onsubmit="return validateForm()">
+            <label for="rollNo">Roll No:</label>
+            <input type="text" id="rollNo" name="rollNo" required>
+            <span class="error" id="rollNoError"></span>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <span class="error" id="nameError"></span>
+
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+            <span class="error" id="genderError"></span>
+
+            <label for="interests">Interests:</label>
+            <input type="checkbox" id="sports" name="interests" value="sports">
+            <label for="sports">Sports</label>
+            <input type="checkbox" id="music" name="interests" value="music">
+            <label for="music">Music</label>
+            <input type="checkbox" id="art" name="interests" value="art">
+            <label for="art">Art</label>
+
+            <label for="course">Course:</label>
+            <select id="course" name="course">
+                <option value="math">Math</option>
+                <option value="science">Science</option>
+                <option value="history">History</option>
+            </select>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <span class="error" id="dobError"></span>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            var rollNo = document.getElementById("rollNo").value;
+            var name = document.getElementById("name").value;
+            var gender = document.querySelector('input[name="gender"]:checked');
+            var dob = document.getElementById("dob").value;
+
+            var rollNoPattern = /^\d{7}$/;
+            var namePattern = /^[A-Za-z]+$/;
+
+            var isValid = true;
+
+            if (!rollNoPattern.test(rollNo)) {
+                document.getElementById("rollNoError").innerHTML = "Please enter a valid 7-digit roll number.";
+                isValid = false;
+            } else {
+                document.getElementById("rollNoError").innerHTML = "";
+            }
+
+            if (!namePattern.test(name)) {
+                document.getElementById("nameError").innerHTML = "Please enter a valid name (only alphabets).";
+                isValid = false;
+            } else {
+                document.getElementById("nameError").innerHTML = "";
+            }
+
+            if (!gender) {
+                document.getElementById("genderError").innerHTML = "Please select a gender.";
+                isValid = false;
+            } else {
+                document.getElementById("genderError").innerHTML = "";
+            }
+
+            if (dob === "") {
+                document.getElementById("dobError").innerHTML = "Please enter a valid date of birth.";
+                isValid = false;
+            } else {
+                document.getElementById("dobError").innerHTML = "";
+            }
+
+            return isValid;
+        }
+    </script>
+</body>
+</html>
+
+
